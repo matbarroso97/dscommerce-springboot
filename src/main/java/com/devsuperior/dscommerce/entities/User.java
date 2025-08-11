@@ -25,11 +25,11 @@ public class User {
       private LocalDate birthDate;
       private String password;
 
-    @OneToMany(mappedBy = "client")
-    private List<Order> orders = new ArrayList<>();
+      @OneToMany(mappedBy = "client")
+      private List<Order> orders = new ArrayList<>();
 
-    public User (){
-      }
+    public User () {
+    }
 
     public User(Long id, String name, String email, String phone, LocalDate birthDate, String password) {
         this.id = id;
